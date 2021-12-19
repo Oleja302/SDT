@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_my_class.html#a5df7060044d5ebe41b4b9fef15029e96"><param name="Name" value="DoSmth"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_my_class.html"><param name="Name" value="MyClass"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_my_class.html"><param name="Name" value="MyClass"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_my_class.html#a5df7060044d5ebe41b4b9fef15029e96"><param name="Name" value="DoSmth"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="class_my_class.html"><param name="Name" value="MyClass"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="class_my_class.html#a8c56a953295afdced0c95908bf2663da"><param name="Name" value="MyClass"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="Name" value="Test.cpp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="_test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4"><param name="Name" value="main"></OBJECT>
+</UL>
+</BODY>
+</HTML>

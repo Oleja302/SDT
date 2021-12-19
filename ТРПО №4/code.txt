@@ -1,0 +1,198 @@
+1) ----------------------------------------------------------------------------------------------
+
+private void set_mode(bool mod)
+{
+ label1.Enabled=mod;
+ button1.Enabled=mod;
+ button2.Enabled=mod;
+ button3.Enabled=mod;
+ button4.Enabled=mod;
+}
+
+2) ----------------------------------------------------------------------------------------------
+
+ return m_driverStatusNames[driver.Status];
+ 
+3) ----------------------------------------------------------------------------------------------
+
+uint i;
+…
+if (i < 10)
+{
+...
+}
+
+4) ----------------------------------------------------------------------------------------------
+
+string destination = string.Empty;
+for (int i = 0; i < source.Length; i++)
+ destination += source[i];
+
+5) ----------------------------------------------------------------------------------------------
+
+Bool IsNumber (string str) 
+{
+
+return int.TryParse(str, out ignoreMe)
+
+}
+
+6) ----------------------------------------------------------------------------------------------
+
+foreach (DirectoryInfo dir in dirs.GetDirectories())
+{
+stream.Write(new byte[]{ (byte)NetworkMessage.MakeDir }, 0, 1);
+stream.Read(new byte[1], 0, 1);
+stream.Write(Encoding.UTF8.GetBytes(SubFolder.Replace('\\', '/') + dir.Name.Replace('\\', '/')), 0, 4);
+stream.Write(Encoding.UTF8.GetBytes(SubFolder.Replace('\\', '/') + dir.Name.Replace('\\', '/')),0, Encoding.UTF8.GetBytes(SubFolder.Replace('\\', '/') + dir.Name.Replace('\\', '/')).Length);
+
+stream.Read(new byte[1], 0, 1);
+}
+
+7) ----------------------------------------------------------------------------------------------
+
+String[] days = new String[7];
+days[0] = "Monday";
+days[1] = "Tuesday";
+days[2] = "Wednesday";
+days[3] = "Thursday";
+days[4] = "Friday";
+days[5] = "Saturday";
+days[6] = "Sunday";
+
+8) ----------------------------------------------------------------------------------------------
+
+DateTime dt = DateTime.Now;
+Console.WriteLine(dt.ToString("--hh:mm:ss--"));
+
+9) ----------------------------------------------------------------------------------------------
+
+ return (Counter / 2 != Counter / 2.00 && Counter != 0);
+
+10) ----------------------------------------------------------------------------------------------
+
+if (Connected == 0) rez = setup();
+fl_end = true;
+
+11) ----------------------------------------------------------------------------------------------
+
+List<int> arr = new List<int>();
+List<int> tmpArr = new List<int>();
+
+for (int i = 0; i < arr.Count; i++)
+if (arr[i] <= 100) tmpArr.Add(arr[i]);
+
+arr = tmpArr;
+
+12) ----------------------------------------------------------------------------------------------
+
+var ids = form.Keys;
+if(ids.Length == 0) throw Exception;
+else if(ids.Length > 1) throw Exception;
+
+13) ----------------------------------------------------------------------------------------------
+
+//Use the Name field
+string[] nameParts = customer.Name.Split(' ');
+string firstName = nameParts[0];
+string lastName = nameParts[1];
+
+14) ----------------------------------------------------------------------------------------------
+
+string id = sourceIDs.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)[0]
+sourceId = Convert.ToInt32(id);
+
+15) ----------------------------------------------------------------------------------------------
+
+public string generateEMail()
+{
+            string res;
+            int i = PersonName.IndexOf(" ");
+
+            char[] str1 = new char[i];
+            PersonName.CopyTo(0, str1, 0, i);
+            string str11 = new string(str1);
+
+            char[] str2 = new char[PersonName.Length - i - 1];
+            PersonName.CopyTo(i + 1, str2, 0, PersonName.Length - i - 1);
+            string str22 = new string(str2);
+
+            res = str11.ToString() + "." + str22.ToString();
+
+            if (res.Length > 20) res = res.Remove(21, res.Length - 21);
+            res += "@domain.ua";
+
+	    return res;
+}
+
+16) ----------------------------------------------------------------------------------------------
+
+string id = sourceIDs.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)[0]
+sourceId = Convert.ToInt32(id);
+
+17) ----------------------------------------------------------------------------------------------
+
+string GetTextDiv2(string text)
+ {
+
+ int mid = text.Length / 2;
+ int r = r < 0 ? 5000 : text.IndexOf(" ", mid); 
+ int l = l < 0 ? 5000 : text.IndexOf(" ", 0, mid); 
+
+ mid = r - mid > mid - l ? mid = l : mid = r;
+ if (mid == 5000) return "&nbsp" + text;
+ 
+return "&nbsp" + text.Substring(0, mid) + " <br/>&nbsp" + text.Substring(mid, text.Length - mid);
+ }
+
+18) ----------------------------------------------------------------------------------------------
+
+ private static readonly char SPECIFIER = '$';
+ private static readonly char DELIMITER = ':';
+ private static readonly char[] DELIMITER_ARRAY = new char[] { DELIMITER };
+
+19) ----------------------------------------------------------------------------------------------
+string mailTo;
+
+if(Config.GetSetting("AdminNotifications_EmailAddress") == null ||
+Config.GetSetting("AdminNotifications_EmailAddress").Length <= 0)
+{
+  mailTo = Globals.GetHostPortalSettings().HostSettings["SMTPPassword"].ToString()
+}
+
+else 
+{
+  mailTo = Config.GetSetting("AdminNotifications_EmailAddress")
+}
+
+20) ----------------------------------------------------------------------------------------------
+
+ public bool CheckPath(string path)
+        {
+            //Проверяем наличие нужных папок;
+            if (Directory.Exists(path + "SCLAD") && Directory.Exists(path + "REAL") && Directory.Exists(path + "DOSTAVKA") && File.Exists(path + "analit.dbf") && File.Exists(path + "partner.dbf") && File.Exists(path + "SCLAD\\mdoc.dbf") && File.Exists(path + "SCLAD\\mdoc.fpt") && File.Exists(path + "SCLAD\\mdocm.dbf") && File.Exists(path + "SCLAD\\mgrup.dbf") && File.Exists(path + "SCLAD\\mlabel.dbf") && File.Exists(path + "SCLAD\\mlabel.fpt") && File.Exists(path + "REAL\\rbookm.dbf") && File.Exists(path + "REAL\\rbook.dbf") && File.Exists(path + "REAL\\rbook.fpt") && File.Exists(path + "DOSTAVKA\\avt.dbf") && File.Exists(path + "DOSTAVKA\\avtm.dbf") && File.Exists(path + "DOSTAVKA\\avtm.fpt") && File.Exists(path + "DOSTAVKA\\cargo.dbf") && File.Exists(path + "DOSTAVKA\\cargom.dbf") && File.Exists(path + "DOSTAVKA\\zamena.dbf"))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+21) ----------------------------------------------------------------------------------------------
+
+txtContacts.Text = string.Empty;
+bool first = true;
+
+foreach (string contact in contacts)
+{
+if (!first) txtContacts.Text += ";";
+first = false;
+txtContacts.Text += contact;
+}
+
+22) ----------------------------------------------------------------------------------------------
+
+if (Game1.clou)
+  Game1.clou = false;
+else
+  Game1.clou = true; 
